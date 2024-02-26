@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float f;
+    scanf("%f", &f);
+    int x = floor(f);
+    int y = ceil(f);
+    printf("Floor = %d\nCeiling = %d", x,y);
+    return 0;
+}
