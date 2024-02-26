@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float f;
+    scanf("%f", &f);
+    float x = sin(f);
+    float y = cos(f);
+    float z = tan(f);
+    printf("Sine = %.2f\nCosine = %.2f\nTangent = %.2f", x,y,z);
+    return 0;
+}
