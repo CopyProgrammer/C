@@ -1,0 +1,31 @@
+#include<stdio.h>
+
+void output(int a, int b) {
+    int count = 0;
+
+    if(a>b) {
+        int temp = a;
+        a = b;
+        b = temp;
+    }
+
+    for (int i = a+1; i<b; i++) {
+        if(i%2 != 0) {
+            count += i;
+        }
+    }
+    printf("%d\n", count);
+}
+
+int main() {
+    int x;
+    scanf("%d", &x);
+
+    while(x--) {
+        int a,b;
+        scanf("%d %d", &a, &b);
+        output(a,b);
+    }
+
+    return 0;
+}
